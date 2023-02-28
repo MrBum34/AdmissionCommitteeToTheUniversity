@@ -3,6 +3,7 @@ package by.vstu.rgr_v2.entity;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+
 import javax.persistence.*;
 import java.util.Collection;
 
@@ -28,8 +29,6 @@ public class Users extends AbstractEntity implements UserDetails {
 
     public Users() {
     }
-
-
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return null;
